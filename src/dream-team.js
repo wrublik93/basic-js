@@ -13,14 +13,3 @@ module.exports = function createDreamTeam(members) {
     return false;
   }
 };
-
-
-/* let codeArray = code.split('').sort();
-if(code) {
-  return codeArray.join('');
-} else {
-  return false;
-}
-} else {
-return false;
-} */
