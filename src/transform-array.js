@@ -20,7 +20,7 @@ module.exports = function transform(arr) {
             }
 
             case discardPrev: {
-                if(i - 1 >= 0){
+                if(i - 1 >= 0 && arr[i - 2] !== '--discard-next'){
                     resultArray.pop();
                 };
                 break;
@@ -34,7 +34,7 @@ module.exports = function transform(arr) {
             }
 
             case doublePrev: {
-                if(i - 1 >= 0){
+                if(i - 1 >= 0 && arr[i - 2] !== '--discard-next'){
                     resultArray.push(arr[i - 1]);
                 };
                 break;
